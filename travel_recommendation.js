@@ -7,7 +7,7 @@ btnSearch.addEventListener('click', function () {
     let resultsDiv = document.querySelector('#results');
     let validQueryCard = document.querySelector('#validQueryCard');
 
-    fetch('/travel_recommendation.json')
+    fetch('https://kgsanchez.github.io/travel_recommendation/travel_recommendation.json')
         .then(response => response.json())
         .then(data => {
             let filteredData = [];
